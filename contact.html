@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Villa Bambou</title>
+<meta name="description" content="Contactez-nous pour réserver la Villa Bambou à La Londe-les-Maures : dates, nombre de voyageurs, devis personnalisé.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="entete">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="5" y="10" width="3.6" height="20" rx="1.8" fill="currentColor" opacity="0.55"/>
+        <rect x="12.5" y="4" width="3.6" height="26" rx="1.8" fill="currentColor"/>
+        <rect x="20" y="8" width="3.6" height="22" rx="1.8" fill="currentColor" opacity="0.75"/>
+        <rect x="27.5" y="13" width="3.6" height="17" rx="1.8" fill="currentColor" opacity="0.55"/>
+        <ellipse cx="14.3" cy="4" rx="5" ry="2.2" transform="rotate(-30 14.3 4)" fill="currentColor"/>
+        <ellipse cx="21.8" cy="7" rx="4.2" ry="1.9" transform="rotate(25 21.8 7)" fill="currentColor" opacity="0.8"/>
+      </svg>
+      Villa Bambou
+    </a>
+    <nav class="principale">
+      <ul>
+        <li><a href="index.html" data-i18n="nav_accueil">Accueil</a></li>
+        <li><a href="chambres.html" data-i18n="nav_chambres">Chambres</a></li>
+        <li><a href="galerie.html" data-i18n="nav_galerie">Galerie</a></li>
+        <li><a href="contact.html" class="actif" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="entete-droite">
+      <div class="langues">
+        <button data-langue="fr">FR</button>
+        <button data-langue="en">EN</button>
+        <button data-langue="nl">NL</button>
+      </div>
+      <button class="menu-mobile-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:3rem;">
+  <div class="container">
+    <p class="eyebrow" data-i18n="con_hero_eyebrow">Réservation</p>
+    <h1 style="color:var(--blanc);max-width:16ch;" data-i18n="con_hero_titre">Parlons de votre séjour</h1>
+    <p class="hero-sous-titre" data-i18n="con_hero_texte">Décrivez-nous votre projet de séjour...</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="diviseur-bambou" aria-hidden="true">
+    <span class="trait"></span>
+    <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="4" width="6" height="32" rx="3" fill="currentColor" opacity="0.5"/><rect x="20" y="0" width="6" height="40" rx="3" fill="currentColor"/><rect x="34" y="6" width="6" height="30" rx="3" fill="currentColor" opacity="0.7"/><rect x="48" y="10" width="6" height="24" rx="3" fill="currentColor" opacity="0.45"/></svg>
+    <span class="trait"></span>
+  </div>
+</div>
+
+
+<section>
+  <div class="container">
+    <div class="grille-2" style="align-items:flex-start;gap:3rem;">
+
+      <form class="formulaire carte" id="formulaire-contact">
+        <div class="ligne-champs">
+          <div class="champ">
+            <label for="nom" data-i18n="con_form_nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <div class="champ">
+            <label for="email" data-i18n="con_form_email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="ligne-champs">
+          <div class="champ">
+            <label for="arrivee" data-i18n="con_form_arrivee">Date d'arrivée souhaitée</label>
+            <input type="date" id="arrivee" name="arrivee">
+          </div>
+          <div class="champ">
+            <label for="depart" data-i18n="con_form_depart">Date de départ souhaitée</label>
+            <input type="date" id="depart" name="depart">
+          </div>
+        </div>
+        <div class="champ">
+          <label for="voyageurs" data-i18n="con_form_voyageurs">Nombre de voyageurs</label>
+          <input type="number" id="voyageurs" name="voyageurs" min="1" max="13">
+        </div>
+        <div class="champ">
+          <label for="message" data-i18n="con_form_message">Votre message</label>
+          <textarea id="message" name="message" rows="5" data-i18n-placeholder="con_form_message_ph" placeholder="Parlez-nous de votre séjour…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primaire" data-i18n="con_form_bouton" style="justify-self:start;">Envoyer la demande</button>
+        <p style="font-size:0.82rem;opacity:0.65;margin:0;" data-i18n="con_note">Ce formulaire ouvre votre messagerie habituelle...</p>
+      </form>
+
+      <div>
+        <div class="carte" style="margin-bottom:1.5rem;">
+          <h3 data-i18n="con_info_titre">Votre hôte</h3>
+          <p data-i18n="con_info_hote">Bernard vous accueille depuis plus de onze ans...</p>
+          <p style="margin-bottom:0;opacity:.8;font-size:.92rem;" data-i18n="con_info_langues">Langues parlées : français, anglais, néerlandais</p>
+        </div>
+        <div class="carte" style="margin-bottom:1.5rem;">
+          <h3 data-i18n="con_pratique_titre">Infos pratiques</h3>
+          <ul class="liste-feuilles" style="margin-bottom:0;">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="con_pratique_arrivee">Arrivée : entre 17 h et 19 h</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="con_pratique_depart">Départ : avant 11 h</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span data-i18n="con_pratique_adresse">Domaine de Valcros, La Londe-les-Maures (Var)</span></li>
+          </ul>
+        </div>
+        <div class="photo-attente ratio-large teinte-mer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <span data-i18n="con_pratique_adresse">Domaine de Valcros, La Londe-les-Maures (Var)</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grille">
+      <div>
+        <div class="logo" style="color:var(--sable-100);margin-bottom:1rem;">
+          <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="30" height="30">
+            <rect x="5" y="10" width="3.6" height="20" rx="1.8" fill="currentColor" opacity="0.55"/>
+            <rect x="12.5" y="4" width="3.6" height="26" rx="1.8" fill="currentColor"/>
+            <rect x="20" y="8" width="3.6" height="22" rx="1.8" fill="currentColor" opacity="0.75"/>
+          </svg>
+          Villa Bambou
+        </div>
+        <p style="opacity:.8;max-width:34ch;" data-i18n="footer_tagline">Une villa provençale pour les vacances en famille...</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer_nav_titre">Navigation</h4>
+        <ul style="display:flex;flex-direction:column;gap:.6rem;margin-top:1rem;">
+          <li><a href="index.html" data-i18n="nav_accueil">Accueil</a></li>
+          <li><a href="chambres.html" data-i18n="nav_chambres">Chambres</a></li>
+          <li><a href="galerie.html" data-i18n="nav_galerie">Galerie</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer_adresse_titre">Où se trouve la villa</h4>
+        <p style="opacity:.8;margin-top:1rem;" data-i18n="footer_adresse">Domaine de Valcros, La Londe-les-Maures, Var (83), France</p>
+      </div>
+    </div>
+    <div class="footer-bas">
+      <span data-i18n="footer_droits">© 2026 Villa Bambou. Tous droits réservés.</span>
+      <span data-i18n="commun_badge_note">4,42 / 5 — 31 séjours notés</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
